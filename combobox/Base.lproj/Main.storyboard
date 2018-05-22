@@ -18,38 +18,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JjQ-E7-hYw">
-                                <rect key="frame" x="16" y="43" width="343" height="30"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZRi-Rl-ctF">
+                                <rect key="frame" x="8" y="20" width="358" height="128"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JjQ-E7-hYw">
+                                        <rect key="frame" x="8" y="8" width="342" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="ZCb-bI-Z6T"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="342" id="mKz-Uw-F5l"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAg-0B-u4H">
+                                        <rect key="frame" x="8" y="46" width="342" height="82"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="342" id="axu-ld-Zi1"/>
+                                            <constraint firstAttribute="height" constant="82" id="s71-LA-lLh"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="oOw-lP-cIM"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="ck8-Zr-pVt"/>
+                                        </connections>
+                                    </pickerView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="343" id="XQ3-4x-Lvn"/>
-                                    <constraint firstAttribute="height" constant="30" id="j6r-fV-HUK"/>
+                                    <constraint firstAttribute="bottom" secondItem="cAg-0B-u4H" secondAttribute="bottom" id="NPi-ay-AWv"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="358" id="Wl6-uY-rVz"/>
+                                    <constraint firstAttribute="bottom" secondItem="JjQ-E7-hYw" secondAttribute="bottom" constant="90" id="aim-Ia-jFD"/>
+                                    <constraint firstAttribute="height" constant="128" id="e2z-0g-dHh"/>
+                                    <constraint firstItem="cAg-0B-u4H" firstAttribute="leading" secondItem="ZRi-Rl-ctF" secondAttribute="leading" constant="8" id="mEU-Bk-UUr"/>
+                                    <constraint firstAttribute="trailing" secondItem="JjQ-E7-hYw" secondAttribute="trailing" constant="8" id="n4k-Tv-nRU"/>
+                                    <constraint firstAttribute="trailing" secondItem="cAg-0B-u4H" secondAttribute="trailing" constant="8" id="o4h-Ca-s0d"/>
+                                    <constraint firstItem="JjQ-E7-hYw" firstAttribute="top" secondItem="ZRi-Rl-ctF" secondAttribute="top" constant="8" id="q6m-kH-Jeb"/>
+                                    <constraint firstItem="JjQ-E7-hYw" firstAttribute="leading" secondItem="ZRi-Rl-ctF" secondAttribute="leading" constant="8" id="qet-Vy-EBB"/>
+                                    <constraint firstItem="cAg-0B-u4H" firstAttribute="top" secondItem="JjQ-E7-hYw" secondAttribute="bottom" constant="8" id="uXE-2k-Ry2"/>
                                 </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAg-0B-u4H">
-                                <rect key="frame" x="0.0" y="81" width="375" height="162"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="xXc-gG-yfs"/>
-                                    <constraint firstAttribute="height" constant="162" id="yuA-jX-Qht"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="oOw-lP-cIM"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ck8-Zr-pVt"/>
-                                </connections>
-                            </pickerView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.97925437179999997" green="0.65666136892771421" blue="0.33990320285937337" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="JjQ-E7-hYw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="1lx-6S-VP6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cAg-0B-u4H" secondAttribute="bottom" constant="424" id="D3s-c6-WnR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JjQ-E7-hYw" secondAttribute="bottom" constant="594" id="EaC-CT-qyL"/>
-                            <constraint firstItem="JjQ-E7-hYw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="J1r-mb-68i"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JjQ-E7-hYw" secondAttribute="trailing" constant="16" id="Lh6-fT-vul"/>
-                            <constraint firstItem="cAg-0B-u4H" firstAttribute="top" secondItem="JjQ-E7-hYw" secondAttribute="bottom" constant="8" id="TI1-eH-Cle"/>
-                            <constraint firstItem="cAg-0B-u4H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eGs-sv-Qkr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cAg-0B-u4H" secondAttribute="trailing" id="t5C-cz-5aE"/>
+                            <constraint firstItem="ZRi-Rl-ctF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="85G-br-qaz"/>
+                            <constraint firstItem="ZRi-Rl-ctF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="I4k-bQ-aet"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZRi-Rl-ctF" secondAttribute="trailing" constant="9" id="Q35-hd-ofa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ZRi-Rl-ctF" secondAttribute="bottom" constant="519" id="Uo0-qe-WYG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
