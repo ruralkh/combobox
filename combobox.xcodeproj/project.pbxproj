@@ -14,6 +14,7 @@
 		0B075EDD20B40ADB00F80FF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B075EDB20B40ADB00F80FF4 /* LaunchScreen.storyboard */; };
 		0B075EE820B40ADB00F80FF4 /* comboboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B075EE720B40ADB00F80FF4 /* comboboxTests.swift */; };
 		0B075EF320B40ADB00F80FF4 /* comboboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B075EF220B40ADB00F80FF4 /* comboboxUITests.swift */; };
+		0B075F0120B4135B00F80FF4 /* noteandreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B075F0020B4135B00F80FF4 /* noteandreferences.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0B075EEE20B40ADB00F80FF4 /* comboboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = comboboxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B075EF220B40ADB00F80FF4 /* comboboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = comboboxUITests.swift; sourceTree = "<group>"; };
 		0B075EF420B40ADB00F80FF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B075F0020B4135B00F80FF4 /* noteandreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noteandreferences.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		0B075EC620B40ADA00F80FF4 = {
 			isa = PBXGroup;
 			children = (
+				0B075F0020B4135B00F80FF4 /* noteandreferences.swift */,
 				0B075ED120B40ADA00F80FF4 /* combobox */,
 				0B075EE620B40ADB00F80FF4 /* comboboxTests */,
 				0B075EF120B40ADB00F80FF4 /* comboboxUITests */,
@@ -258,6 +261,7 @@
 			files = (
 				0B075ED520B40ADA00F80FF4 /* ViewController.swift in Sources */,
 				0B075ED320B40ADA00F80FF4 /* AppDelegate.swift in Sources */,
+				0B075F0120B4135B00F80FF4 /* noteandreferences.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
